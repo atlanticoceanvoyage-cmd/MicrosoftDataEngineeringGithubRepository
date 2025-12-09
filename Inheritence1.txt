@@ -1,0 +1,16 @@
+lst = [1,2,3,4,5,6]
+lst2=[]
+for I in lst:
+    lst2.append(i**2)
+print(lst2)
+[2,4,9,16,25,36]
+
+class Employee:
+     def __init__(self,name,id):
+	 self.name= name
+	 self.id= id
+     def showDetails(self):
+	 print (f"The name of the employee: {self.id} 		is {self.name}")
+e = Employee("Rohan Das",420)
+e.showDetails()
+
