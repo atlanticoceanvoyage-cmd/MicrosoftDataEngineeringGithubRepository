@@ -1,0 +1,29 @@
+lass Employee():
+
+    #Class Attribute
+    company_name = 'XTZ'
+
+    #Created the Constructor for calling Info(self)
+    def __init__(self, emp_name, emp_dept):
+        self.emp_name = emp_name
+        self.emp_dept = emp_dept
+	
+																																																																																																																																																						 `1																																												
+    def info(self):
+        print(f"Employee {self.emp_name} works "
+              f"for {self.emp_dept} in {self.company_name}")
+
+#Created emp1 object by passing Two Parameters
+emp1 = Employee("Priya","IT")
+
+#Created emp2 object by passing Two Parameters
+emp2 = Employee("Muhammad Khan","Data Engineer")
+
+#Created Company Name Object by ABC
+employee.company_name ="ABC"
+
+#Calling emp1 object using methods or functions
+emp1.info()
+
+
+																														
