@@ -1,0 +1,43 @@
+class Employee():
+
+    #Class Attribute
+    company_name = 'XTZ'
+
+    #Created the Constructor for calling Info(self)
+    def __init__(self, emp_name, emp_dept):
+        self.emp_name = emp_name
+        self.emp_dept = emp_dept
+
+    @classmethod
+    def changes(self,new_company):
+	    self.company_name=new_company
+
+    def info(self):
+        print(f"Employee {self.emp_name} works "
+              f"for {self.emp_dept}")
+
+    @staticmethod
+    def addition(x,y):
+	    print(x+y)
+
+emp1 = Employee("Priya","IT")
+emp1.info()
+#Created emp2 object by passing Two Parameters
+emp2 = Employee("Muhammad Khan","Data Engineer")
+
+#Created Company Name Object
+emp2.company_name='ABC'
+print("Company Name",emp2.company_name)
+#emp1.company_name='DEF'
+print("Company Name",emp1.company_name)
+
+#Calling emp2 object using methods or functions
+emp2.info()
+
+emp1.addition(1,2)
+
+emp1.changes("NewNewCompany")
+print(emp1.company_name)
+
+
+
