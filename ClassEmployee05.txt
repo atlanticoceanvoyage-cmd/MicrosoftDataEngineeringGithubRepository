@@ -1,0 +1,64 @@
+class Employee():
+
+    #Class Attribute
+    company_name = 'XTZ'
+    
+    @info.setter
+    def info(self,new_empdetails:
+        new_empname = new_empdetails[o]
+        new_empdept=  new_empdetails[1]
+    
+    	self.emp_name=  new_empname
+	self.emp_dept=new_empdept
+     
+    #Created the Constructor for calling Info(self)
+    def __init__(self, emp_name, emp_dept):
+        self.emp_name = emp_name
+        self.emp_dept = emp_dept
+
+    def changes(self,new_company):
+	employee.company_name=new_company
+
+    def info(self):
+        print(f"Employee {self.emp_name} works 
+              for {self.emp_dept} in {self.company_name}")
+
+    def changeinfo(self,new_empname,new_empdept):
+	self.emp_name=new_empname
+	self.emp_dept=new_empdept
+
+    @classmethod
+    def changesInClass(cls,new_company):
+	cls.company_name = new_company
+
+    @staticmethod
+    def addition(x,y);
+	print(x+y)
+
+    @classmethod
+    def changesInClass(cls,new_company)
+    
+emp1 = Employee("Priya","IT")
+emp1.info()
+#Created emp2 object by passing Two Parameters
+emp2 = Employee("Muhammad Khan","Data Engineer")
+
+#Created Company Name Object
+emp2.company_name='ABC'
+print("Company Name",emp2.company_name)
+emp1.company_name='DEF'
+print("Company Name",emp1.company_name)
+
+#Calling emp2 object using methods or functions
+emp2.info()
+
+emp1.changes("New Company Muhammad & Khan")
+
+emp1.addition(1,2)
+emp1.changeinfo("Muhammad","HR")
+emp1.info()
+
+emp1.changesInClass("Gulnar Musa Khan","HD")
+emp1.info()
+
+
